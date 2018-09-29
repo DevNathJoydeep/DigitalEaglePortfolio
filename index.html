@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Digital Eagle | EDM Producer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="Joydeep Dev Nath" />
+    <meta property="description" content="Portfolio of EDM Producer Digital Eagle" />
     <link rel="stylesheet" type="text/css" media="screen" href="sass/main.css" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
@@ -17,7 +20,7 @@
 
 <body>
     <div class="container">
-        <div class="hero">
+        <div class="hero" id="home">
             <div class="particlesContainer">
                 <div class="particles" data-precision="1" data-100p="transform: translateX(-50%) translateY(25%)"
                     data-start="transform: translateX(-50%) translateY(0%)"></div>
@@ -41,12 +44,11 @@
             <div class="navOverlay">
                 <div class="overlayContent">
                     <div class="linkContainer">
-                        <a href="#">Home</a>
-                        <a href="#">About Me</a>
-                        <a href="#">Music</a>
-                        <a href="#">Videos</a>
-                        <a href="#">Tweets</a>
-                        <a href="#">Contact Me</a>
+                        <a class="scroll" href="#home">Home</a>
+                        <a class="scroll" href="#aboutMe">About Me</a>
+                        <a class="scroll" href="#music">Music</a>
+                        <a class="scroll" href="#videos">Videos</a>
+                        <a class="scroll" href="#contactMe">Contact Me</a>
                     </div>
                 </div>
             </div>
@@ -62,12 +64,14 @@
                 <h1>Hi, I am Digital Eagle</h1>
                 <h2>I compose Indian Electronic Music</h2>
                 <div class="playButton">
-                    <img src="images/play.svg" class="playButtonImgBlur" alt="play" />
-                    <img src="images/play.svg" class="playButtonImg" alt="play" />
+                    <a class="musicScroll" href="#music">
+                        <img src="images/play.svg" class="playButtonImgBlur" alt="play" />
+                        <img src="images/play.svg" class="playButtonImg" alt="play" />
+                    </a>
                 </div>
             </div>
         </div>
-        <div class="aboutMe">
+        <div class="aboutMe" id="aboutMe">
             <h3>About Me</h3>
             <p>Lorem ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor
                 sit amet
@@ -75,7 +79,7 @@
                 amet
                 ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet </p>
         </div>
-        <div class="music">
+        <div class="music" id="music">
             <h3>Music</h3>
             <div class="musicContainer">
                 <div class="musicGrid">
@@ -164,12 +168,12 @@
                 </div>
             </div>
         </div>
-        <div class="videos">
+        <div class="videos" id="videos">
             <h3>Videos</h3>
             <div class="videoContainer">
                 <div class="videoGrid">
                     <div class="videoArt">
-                        <iframe class="videoThumb" src="https://www.youtube.com/embed/Y5zvxCEC9Ls" frameborder="0"
+                        <iframe class="videoThumb" src="https://www.youtube.com/embed/HMVZPkMeD_0" frameborder="0"
                             allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </div>
                 </div>
@@ -181,25 +185,17 @@
                 </div>
                 <div class="videoGrid">
                     <div class="videoArt">
-                        <iframe class="videoThumb" src="https://www.youtube.com/embed/HMVZPkMeD_0" frameborder="0"
+                        <iframe class="videoThumb" src="https://www.youtube.com/embed/Y5zvxCEC9Ls" frameborder="0"
                             allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="tweets">
-            <h3>Tweets</h3>
-            <div class="tweetContainer">
-                <a class="twitter-timeline" data-theme="light" href="https://twitter.com/ADigitalEagle?ref_src=twsrc%5Etfw">Tweets
-                    by ADigitalEagle</a>
-                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-            </div>
-        </div>
-        <div class="footer">
+        <div class="footer" id="contactMe">
             <h3>Contact Me</h3>
             <p>Fill up the form below and I'll get in touch with you.</p>
             <div class="form">
-                <form class="contactForm" action="https://mailthis.to/digitaleagle" method="POST">
+                <form class=" contactForm" action="https://mailthis.to/digitaleagle" method="POST">
                     <label for="name">Name</label>
                     <input class="input" type="text" name="name" />
                     <label for="email">E-mail</label>
@@ -213,17 +209,31 @@
                 </form>
             </div>
             <div class="social">
-                <i class="fa fa-twitter"></i>
-                <i class="fa fa-youtube"></i>
-                <i class="fa fa-google-plus"></i>
-                <i class="fa fa-soundcloud"></i>
-                <i class="fa fa-pinterest"></i>
+                <a href="https://twitter.com/adigitaleagle" target="_blank" rel="noopener noreferrer">
+                    <i class="fa fa-twitter"></i>
+                </a>
+                <a href="https://youtube.com/channel/UCzzoWvcvGL_ZMFEoi2wwbmA" target="_blank" rel="noopener noreferrer">
+                    <i class="fa fa-youtube"></i>
+                </a>
+                <a href="https://plus.google.com/103440868228790799249" target="_blank" rel="noopener noreferrer">
+                    <i class="fa fa-google-plus"></i>
+                </a>
+                <a href="https://soundcloud.com/adigitaleagle" target="_blank" rel="noopener noreferrer">
+                    <i class="fa fa-soundcloud"></i>
+                </a>
+                <a href="https://pinterest.ca/adigitaleagle" target="_blank" rel="noopener noreferrer">
+                    <i class="fa fa-pinterest"></i>
+                </a>
             </div>
-            <div class="copyright">
+            <div class="copyright desk">
                 Copyright &copy; 2018 Digital Eagle. All rights reserved.
             </div>
+            <div class="copyright mob">
+                Copyright &copy; 2018 Digital Eagle.<br />All rights reserved.
+            </div>
             <div class="developer">
-                Handcrafted by Joydeep with
+                Handcrafted by <a class="whiteLink" href="https://devnathjoydeep.github.io" target="blank" rel="noopener noreferrer">Joydeep</a>
+                with
                 <i class="heart fa fa-heart"></i> in India.
             </div>
         </div>

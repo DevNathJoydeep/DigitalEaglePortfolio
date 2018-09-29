@@ -82,6 +82,7 @@ body {
 }
 
 .container .hero .particlesContainer {
+  z-index: 4;
   position: relative;
 }
 
@@ -100,6 +101,7 @@ body {
 }
 
 .container .hero .headphonesContainer {
+  z-index: 4;
   position: relative;
 }
 
@@ -116,6 +118,7 @@ body {
 }
 
 .container .hero .notesYellowContainer {
+  z-index: 4;
   position: relative;
 }
 
@@ -132,6 +135,7 @@ body {
 }
 
 .container .hero .notesPinkContainer {
+  z-index: 4;
   position: relative;
 }
 
@@ -148,6 +152,7 @@ body {
 }
 
 .container .hero .microphoneContainer {
+  z-index: 4;
   position: relative;
 }
 
@@ -287,6 +292,8 @@ body {
   padding: 200px 0 300px 0;
   text-align: center;
   color: white;
+  z-index: 5;
+  position: relative;
 }
 
 .container .hero .intro h1 {
@@ -683,6 +690,14 @@ body {
   font-size: 16px;
 }
 
+.container .footer .desk {
+  display: block;
+}
+
+.container .footer .mob {
+  display: none;
+}
+
 .container .footer .developer {
   margin-top: 10px;
   color: white;
@@ -690,10 +705,659 @@ body {
   font-size: 16px;
 }
 
+.container .footer .developer .whiteLink {
+  color: white;
+  text-decoration: underline;
+  -webkit-text-decoration-style: dotted;
+          text-decoration-style: dotted;
+}
+
 .container .footer .developer .heart {
   color: #ff3b3b;
   -webkit-animation: heart 1.5s infinite;
           animation: heart 1.5s infinite;
   text-shadow: 0 0 10px rgba(255, 59, 59, 0.75);
+}
+
+@media only screen and (min-width: 1500px) and (max-width: 2000px) {
+  .container .hero .particlesContainer .particles {
+    margin-top: 250px;
+  }
+  .container .hero .headphonesContainer .headphones {
+    height: 300px;
+    width: 450px;
+  }
+  .container .hero .notesYellowContainer .notesYellow {
+    margin-left: 100px;
+    height: 450px;
+    width: 600px;
+  }
+  .container .hero .notesPinkContainer .notesPink {
+    margin-left: 1250px;
+    height: 600px;
+    width: 600px;
+  }
+  .container .hero .microphoneContainer .microphone {
+    margin-left: 1200px;
+    margin-top: 550px;
+    height: 400px;
+    width: 400px;
+  }
+  .container .hero .intro {
+    padding: 450px 0 300px 0;
+  }
+  .container .hero .intro h1 {
+    font-size: 60px;
+  }
+  .container .hero .intro h2 {
+    font-size: 30px;
+  }
+  .container .aboutMe {
+    padding: 60px 500px;
+  }
+  .container .aboutMe h3 {
+    font-size: 38px;
+  }
+  .container .aboutMe p {
+    font-size: 24px;
+  }
+  .container .music {
+    padding: 60px 500px;
+  }
+  .container .music h3 {
+    font-size: 38px;
+  }
+  .container .videos {
+    padding: 60px 500px;
+  }
+  .container .videos h3 {
+    font-size: 38px;
+  }
+  .container .tweets {
+    padding: 60px 500px;
+  }
+  .container .tweets h3 {
+    font-size: 38px;
+  }
+  .container .footer {
+    background-position: center, top center;
+  }
+  .container .footer h3 {
+    font-size: 38px;
+  }
+  .container .footer p {
+    font-size: 24px;
+  }
+  .container .footer .form .contactForm {
+    padding: 0 400px 80px 400px;
+  }
+  .container .footer .copyright {
+    font-size: 20px;
+  }
+  .container .footer .developer {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 1100px) and (max-width: 1200px) {
+  .container .hero .headphonesContainer .headphones {
+    height: 200;
+    width: 300;
+  }
+  .container .hero .notesYellowContainer .notesYellow {
+    margin-left: 100px;
+    height: 300;
+    width: 450;
+  }
+  .container .hero .notesPinkContainer .notesPink {
+    height: 450px;
+    width: 450px;
+  }
+  .container .hero .microphoneContainer .microphone {
+    margin-left: 1000px;
+    height: 250px;
+    width: 250px;
+  }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1030px) {
+  .container .hero .notesPinkContainer .notesPink {
+    margin-left: 600px;
+    margin-top: 50px;
+    height: 500px;
+    width: 500px;
+  }
+  .container .aboutMe {
+    padding: 60px 100px;
+  }
+  .container .music {
+    padding: 60px 100px;
+  }
+  .container .videos {
+    padding: 60px 100px;
+  }
+  .container .footer .form .contactForm {
+    padding: 0 50px 80px 50px;
+  }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 899px) {
+  .container .hero .notesPinkContainer .notesPink {
+    margin-left: 400px;
+    margin-top: 50px;
+    height: 500px;
+    width: 500px;
+  }
+  .container .aboutMe {
+    padding: 60px 100px;
+  }
+  .container .music {
+    padding: 60px 100px;
+  }
+  .container .music .musicContainer .musicGrid {
+    width: 50%;
+  }
+  .container .music .musicContainer .musicGrid:nth-of-type(1) .musicArt,
+  .container .music .musicContainer .musicGrid:nth-of-type(2) .musicArt,
+  .container .music .musicContainer .musicGrid:nth-of-type(3) .musicArt,
+  .container .music .musicContainer .musicGrid:nth-of-type(4) .musicArt,
+  .container .music .musicContainer .musicGrid:nth-of-type(5) .musicArt,
+  .container .music .musicContainer .musicGrid:nth-of-type(6) .musicArt {
+    margin: 0;
+  }
+  .container .music .musicContainer .musicGrid:nth-of-type(odd) .musicArt {
+    margin-left: 0%;
+  }
+  .container .music .musicContainer .musicGrid:nth-of-type(even) .musicArt {
+    margin-left: 6%;
+  }
+  .container .music .musicContainer .musicGrid .musicArt .musicInfo .middle .musicTag {
+    font-size: 16px;
+  }
+  .container .videos {
+    padding: 60px 100px;
+  }
+  .container .videos .videoContainer .videoGrid {
+    width: 100%;
+    height: 300px;
+  }
+  .container .videos .videoContainer .videoGrid:last-of-type .videoArt {
+    margin-bottom: 0;
+  }
+  .container .videos .videoContainer .videoGrid .videoArt {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 20px;
+  }
+  .container .videos .videoContainer .videoGrid .videoArt .videoThumb {
+    width: 100%;
+    height: 300px;
+  }
+  .container .videos .videoContainer .videoGrid:nth-of-type(1) .videoArt {
+    margin-left: 0%;
+  }
+  .container .videos .videoContainer .videoGrid:nth-of-type(2) .videoArt {
+    margin-left: 0%;
+  }
+  .container .videos .videoContainer .videoGrid:nth-of-type(3) .videoArt {
+    margin-left: 0%;
+  }
+  .container .footer {
+    padding: 180px 0px 100px 0px;
+  }
+  .container .footer .form .contactForm {
+    padding: 0 50px 80px 50px;
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 699px) {
+  .container .hero .headphonesContainer .headphones {
+    margin-left: 0px;
+    margin-top: 25px;
+    height: 200px;
+    width: 200px;
+  }
+  .container .hero .notesYellowContainer .notesYellow {
+    margin-left: 300px;
+    height: 220px;
+    width: 220px;
+  }
+  .container .hero .intro h1 {
+    font-size: 40px;
+    margin-top: 50px;
+  }
+  .container .hero .intro h2 {
+    font-size: 20px;
+  }
+  .container .hero .intro .playButton {
+    margin-top: 70px;
+  }
+  .container .hero .intro .playButton .playButtonImg {
+    width: 50px;
+  }
+  .container .hero .intro .playButton .playButtonImgBlur {
+    width: 50px;
+  }
+  .container .aboutMe {
+    padding: 40px 75px;
+  }
+  .container .music {
+    padding: 40px 75px;
+  }
+  .container .music .musicContainer .musicGrid {
+    width: 50%;
+  }
+  .container .music .musicContainer .musicGrid:nth-of-type(1), .container .music .musicContainer .musicGrid:nth-of-type(2), .container .music .musicContainer .musicGrid:nth-of-type(3), .container .music .musicContainer .musicGrid:nth-of-type(4), .container .music .musicContainer .musicGrid:nth-of-type(5), .container .music .musicContainer .musicGrid:nth-of-type(6) {
+    padding: 0;
+  }
+  .container .music .musicContainer .musicGrid:nth-of-type(1), .container .music .musicContainer .musicGrid:nth-of-type(2) {
+    padding-bottom: 30px;
+  }
+  .container .music .musicContainer .musicGrid:nth-of-type(5), .container .music .musicContainer .musicGrid:nth-of-type(6) {
+    padding-top: 30px;
+  }
+  .container .music .musicContainer .musicGrid:nth-of-type(1) .musicArt,
+  .container .music .musicContainer .musicGrid:nth-of-type(2) .musicArt,
+  .container .music .musicContainer .musicGrid:nth-of-type(3) .musicArt,
+  .container .music .musicContainer .musicGrid:nth-of-type(4) .musicArt,
+  .container .music .musicContainer .musicGrid:nth-of-type(5) .musicArt,
+  .container .music .musicContainer .musicGrid:nth-of-type(6) .musicArt {
+    margin: 0;
+  }
+  .container .music .musicContainer .musicGrid:nth-of-type(odd) .musicArt {
+    margin-left: 0%;
+  }
+  .container .music .musicContainer .musicGrid:nth-of-type(even) .musicArt {
+    margin-left: 6%;
+  }
+  .container .music .musicContainer .musicGrid .musicArt .musicInfo .middle .musicName {
+    font-size: 20px;
+  }
+  .container .music .musicContainer .musicGrid .musicArt .musicInfo .middle .musicTag {
+    font-size: 14px;
+  }
+  .container .music .musicContainer .musicGrid .musicArt .musicInfo .middle .musicBtn {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  .container .videos {
+    padding: 40px 100px;
+  }
+  .container .videos .videoContainer .videoGrid {
+    width: 100%;
+    height: 300px;
+  }
+  .container .videos .videoContainer .videoGrid:last-of-type .videoArt {
+    margin-bottom: 0;
+  }
+  .container .videos .videoContainer .videoGrid .videoArt {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 20px;
+  }
+  .container .videos .videoContainer .videoGrid .videoArt .videoThumb {
+    width: 100%;
+    height: 300px;
+  }
+  .container .videos .videoContainer .videoGrid:nth-of-type(1) .videoArt {
+    margin-left: 0%;
+  }
+  .container .videos .videoContainer .videoGrid:nth-of-type(2) .videoArt {
+    margin-left: 0%;
+  }
+  .container .videos .videoContainer .videoGrid:nth-of-type(3) .videoArt {
+    margin-left: 0%;
+  }
+  .container .footer {
+    padding: 180px 75px 100px 75px;
+  }
+  .container .footer .form .contactForm {
+    padding: 0 0 80px 0;
+  }
+  .container .footer .social i {
+    font-size: 22px;
+    height: 44px;
+    width: 44px;
+  }
+  .container .footer .copyright {
+    font-size: 14px;
+  }
+  .container .footer .developer {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 330px) and (max-width: 499px) {
+  .container .hero .navOverlay .overlayContent .linkContainer a {
+    width: 200px;
+    font-size: 20px;
+  }
+  .container .hero .menu {
+    right: 25px;
+    top: 25px;
+  }
+  .container .hero .particlesContainer .particles {
+    height: 200px;
+    width: 300px;
+    margin-top: 150px;
+  }
+  .container .hero .headphonesContainer .headphones {
+    margin-left: 50px;
+    margin-top: 25px;
+    height: 100px;
+    width: 100px;
+  }
+  .container .hero .notesYellowContainer .notesYellow {
+    margin-left: 0px;
+    margin-top: 350px;
+    height: 150px;
+    width: 150px;
+  }
+  .container .hero .notesPinkContainer .notesPink {
+    margin-left: 150px;
+    margin-top: 175px;
+    height: 250px;
+    width: 250px;
+  }
+  .container .hero .intro {
+    padding: 150px 0 200px 0;
+  }
+  .container .hero .intro h1 {
+    font-size: 28px;
+    margin-top: 20px;
+  }
+  .container .hero .intro h2 {
+    font-size: 18px;
+    letter-spacing: 0;
+  }
+  .container .hero .intro .playButton {
+    margin-top: 70px;
+  }
+  .container .hero .intro .playButton .playButtonImg {
+    width: 50px;
+  }
+  .container .hero .intro .playButton .playButtonImgBlur {
+    width: 50px;
+  }
+  .container .aboutMe {
+    padding: 30px;
+  }
+  .container .aboutMe h3 {
+    font-size: 28px;
+  }
+  .container .aboutMe p {
+    font-size: 16px;
+  }
+  .container .music {
+    padding: 30px;
+  }
+  .container .music h3 {
+    font-size: 28px;
+  }
+  .container .music .musicContainer .musicGrid {
+    width: 50%;
+  }
+  .container .music .musicContainer .musicGrid:nth-of-type(1), .container .music .musicContainer .musicGrid:nth-of-type(2), .container .music .musicContainer .musicGrid:nth-of-type(3), .container .music .musicContainer .musicGrid:nth-of-type(4), .container .music .musicContainer .musicGrid:nth-of-type(5), .container .music .musicContainer .musicGrid:nth-of-type(6) {
+    padding: 0;
+  }
+  .container .music .musicContainer .musicGrid:nth-of-type(1), .container .music .musicContainer .musicGrid:nth-of-type(2) {
+    padding-bottom: 20px;
+  }
+  .container .music .musicContainer .musicGrid:nth-of-type(5), .container .music .musicContainer .musicGrid:nth-of-type(6) {
+    padding-top: 20px;
+  }
+  .container .music .musicContainer .musicGrid:nth-of-type(1) .musicArt,
+  .container .music .musicContainer .musicGrid:nth-of-type(2) .musicArt,
+  .container .music .musicContainer .musicGrid:nth-of-type(3) .musicArt,
+  .container .music .musicContainer .musicGrid:nth-of-type(4) .musicArt,
+  .container .music .musicContainer .musicGrid:nth-of-type(5) .musicArt,
+  .container .music .musicContainer .musicGrid:nth-of-type(6) .musicArt {
+    margin: 0;
+  }
+  .container .music .musicContainer .musicGrid:nth-of-type(odd) .musicArt {
+    margin-left: 0%;
+  }
+  .container .music .musicContainer .musicGrid:nth-of-type(even) .musicArt {
+    margin-left: 6%;
+  }
+  .container .music .musicContainer .musicGrid .musicArt .musicInfo .middle .musicName {
+    font-size: 16px;
+  }
+  .container .music .musicContainer .musicGrid .musicArt .musicInfo .middle .musicTag {
+    font-size: 12px;
+  }
+  .container .music .musicContainer .musicGrid .musicArt .musicInfo .middle .musicBtn {
+    margin-top: 10px;
+    font-size: 12px;
+    padding: 5px 15px;
+  }
+  .container .videos {
+    padding: 30px;
+  }
+  .container .videos h3 {
+    font-size: 28px;
+  }
+  .container .videos .videoContainer .videoGrid {
+    width: 100%;
+    height: 160px;
+  }
+  .container .videos .videoContainer .videoGrid:last-of-type .videoArt {
+    margin-bottom: 0;
+  }
+  .container .videos .videoContainer .videoGrid .videoArt {
+    width: 100%;
+    height: 160px;
+    margin-bottom: 20px;
+  }
+  .container .videos .videoContainer .videoGrid .videoArt .videoThumb {
+    width: 100%;
+    height: 160px;
+  }
+  .container .videos .videoContainer .videoGrid:nth-of-type(1) .videoArt {
+    margin-left: 0%;
+  }
+  .container .videos .videoContainer .videoGrid:nth-of-type(2) .videoArt {
+    margin-left: 0%;
+  }
+  .container .videos .videoContainer .videoGrid:nth-of-type(3) .videoArt {
+    margin-left: 0%;
+  }
+  .container .footer {
+    padding: 100px 30px 80px 30px;
+  }
+  .container .footer h3 {
+    font-size: 28px;
+  }
+  .container .footer p {
+    font-size: 16px;
+  }
+  .container .footer .form .contactForm {
+    padding: 0 0 80px 0;
+  }
+  .container .footer .social i {
+    font-size: 22px;
+    line-height: 44px;
+    height: 44px;
+    width: 44px;
+  }
+  .container .footer .copyright {
+    font-size: 14px;
+  }
+  .container .footer .desk {
+    display: none;
+  }
+  .container .footer .mob {
+    display: block;
+  }
+  .container .footer .developer {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 329px) {
+  .container .hero .navOverlay .overlayContent .linkContainer a {
+    width: 200px;
+    font-size: 20px;
+  }
+  .container .hero .menu {
+    right: 25px;
+    top: 25px;
+  }
+  .container .hero .particlesContainer .particles {
+    height: 200px;
+    width: 300px;
+    margin-top: 150px;
+  }
+  .container .hero .headphonesContainer .headphones {
+    margin-left: 20px;
+    margin-top: 25px;
+    height: 100px;
+    width: 100px;
+  }
+  .container .hero .notesYellowContainer .notesYellow {
+    margin-left: 0px;
+    margin-top: 300px;
+    height: 150px;
+    width: 150px;
+  }
+  .container .hero .notesPinkContainer .notesPink {
+    margin-left: 150px;
+    margin-top: 150px;
+    height: 250px;
+    width: 250px;
+  }
+  .container .hero .intro {
+    padding: 150px 0 200px 0;
+  }
+  .container .hero .intro h1 {
+    font-size: 26px;
+    margin-top: 20px;
+  }
+  .container .hero .intro h2 {
+    font-size: 16px;
+    letter-spacing: 0;
+  }
+  .container .hero .intro .playButton {
+    margin-top: 70px;
+  }
+  .container .hero .intro .playButton .playButtonImg {
+    width: 50px;
+  }
+  .container .hero .intro .playButton .playButtonImgBlur {
+    width: 50px;
+  }
+  .container .aboutMe {
+    padding: 30px;
+  }
+  .container .aboutMe h3 {
+    font-size: 28px;
+  }
+  .container .aboutMe p {
+    font-size: 16px;
+  }
+  .container .music {
+    padding: 30px;
+  }
+  .container .music h3 {
+    font-size: 28px;
+  }
+  .container .music .musicContainer .musicGrid {
+    width: 50%;
+  }
+  .container .music .musicContainer .musicGrid:nth-of-type(1), .container .music .musicContainer .musicGrid:nth-of-type(2), .container .music .musicContainer .musicGrid:nth-of-type(3), .container .music .musicContainer .musicGrid:nth-of-type(4), .container .music .musicContainer .musicGrid:nth-of-type(5), .container .music .musicContainer .musicGrid:nth-of-type(6) {
+    padding: 0;
+  }
+  .container .music .musicContainer .musicGrid:nth-of-type(1), .container .music .musicContainer .musicGrid:nth-of-type(2) {
+    padding-bottom: 15px;
+  }
+  .container .music .musicContainer .musicGrid:nth-of-type(5), .container .music .musicContainer .musicGrid:nth-of-type(6) {
+    padding-top: 15px;
+  }
+  .container .music .musicContainer .musicGrid:nth-of-type(1) .musicArt,
+  .container .music .musicContainer .musicGrid:nth-of-type(2) .musicArt,
+  .container .music .musicContainer .musicGrid:nth-of-type(3) .musicArt,
+  .container .music .musicContainer .musicGrid:nth-of-type(4) .musicArt,
+  .container .music .musicContainer .musicGrid:nth-of-type(5) .musicArt,
+  .container .music .musicContainer .musicGrid:nth-of-type(6) .musicArt {
+    margin: 0;
+  }
+  .container .music .musicContainer .musicGrid:nth-of-type(odd) .musicArt {
+    margin-left: 0%;
+  }
+  .container .music .musicContainer .musicGrid:nth-of-type(even) .musicArt {
+    margin-left: 6%;
+  }
+  .container .music .musicContainer .musicGrid .musicArt .musicInfo .middle .musicName {
+    font-size: 16px;
+  }
+  .container .music .musicContainer .musicGrid .musicArt .musicInfo .middle .musicTag {
+    font-size: 12px;
+  }
+  .container .music .musicContainer .musicGrid .musicArt .musicInfo .middle .musicBtn {
+    margin-top: 10px;
+    font-size: 10px;
+    padding: 5px 15px;
+  }
+  .container .videos {
+    padding: 30px;
+  }
+  .container .videos h3 {
+    font-size: 28px;
+  }
+  .container .videos .videoContainer .videoGrid {
+    width: 100%;
+    height: 140px;
+  }
+  .container .videos .videoContainer .videoGrid:last-of-type .videoArt {
+    margin-bottom: 0;
+  }
+  .container .videos .videoContainer .videoGrid .videoArt {
+    width: 100%;
+    height: 140px;
+    margin-bottom: 20px;
+  }
+  .container .videos .videoContainer .videoGrid .videoArt .videoThumb {
+    width: 100%;
+    height: 140px;
+  }
+  .container .videos .videoContainer .videoGrid:nth-of-type(1) .videoArt {
+    margin-left: 0%;
+  }
+  .container .videos .videoContainer .videoGrid:nth-of-type(2) .videoArt {
+    margin-left: 0%;
+  }
+  .container .videos .videoContainer .videoGrid:nth-of-type(3) .videoArt {
+    margin-left: 0%;
+  }
+  .container .footer {
+    padding: 100px 20px 80px 20px;
+  }
+  .container .footer h3 {
+    font-size: 28px;
+  }
+  .container .footer p {
+    font-size: 16px;
+  }
+  .container .footer .form .contactForm {
+    padding: 0 0 80px 0;
+  }
+  .container .footer .social i {
+    font-size: 20px;
+    line-height: 40px;
+    height: 40px;
+    width: 40px;
+  }
+  .container .footer .copyright {
+    font-size: 12px;
+  }
+  .container .footer .desk {
+    display: none;
+  }
+  .container .footer .mob {
+    display: block;
+  }
+  .container .footer .developer {
+    font-size: 12px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
